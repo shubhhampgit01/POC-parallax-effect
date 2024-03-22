@@ -1,0 +1,74 @@
+
+@keyframes animateFromTopLeft {
+  from {
+    transform: translate(-100%, -100%) rotate(90deg) scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFromBottomLeft {
+  from {
+    transform: translate(-100%, 100%) rotate(90deg) scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFromTopRight {
+  from {
+    transform: translate(100%, -100%) rotate(-90deg) scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateFromBottomRight {
+  from {
+    transform: translate(100%, 100%) rotate(-90deg) scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animateText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animateFromTopLeft {
+  animation: animateFromTopLeft 1.5s ease-in-out;
+}
+
+.animateFromBottomLeft {
+  animation: animateFromBottomLeft 1.5s ease-in-out;
+}
+
+.animateFromTopRight {
+  animation: animateFromTopRight 1.5s ease-in-out;
+}
+
+.animateFromBottomRight {
+  animation: animateFromBottomRight 1.5s ease-in-out;
+}
+
+.animateContent {
+  animation: animateText 3s ease-in-out ;
+  
+}
